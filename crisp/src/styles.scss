@@ -19,3 +19,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: rgb(70, 70, 70);
 }
+
+.wrapper {
+  overflow-x: hidden;
+}
