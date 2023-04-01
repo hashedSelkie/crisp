@@ -1,0 +1,132 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 600px;
+  .contestant-image1,
+  .contestant-image2 {
+    display: flex;
+    width: 600px;
+    overflow-x: hidden;
+    position: absolute;
+
+    img {
+      max-width: 400px;
+    }
+  }
+  #contestant-info1,
+  #contestant-info2 {
+    padding: 30px;
+    font-size: 1.5em;
+    background-color: #ffffd3;
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+}
+.info {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  .vs {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  p {
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.contestant-image1 {
+  justify-content: right;
+  left: -330px;
+  transition: left 0.5s;
+}
+.contestant-image2 {
+  justify-content: left;
+  right: -335px;
+  transition: right 0.7s;
+}
+
+.mobile-wrapper {
+  display: none;
+}
+
+@media screen and (max-width: 870px) {
+  .wrapper {
+    display: none;
+  }
+
+  .mobile-wrapper {
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    min-height: 80vh;
+    .mobile-vs {
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      font-size: 1.2em;
+      margin: 10px 0;
+      height: 70px;
+      p {
+        padding: 5px;
+      }
+    }
+
+    .images {
+      padding: 50px 0;
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      height: auto;
+
+      h3 {
+        margin-top: 0;
+      }
+      #slideRight,
+      #slideLeft {
+        font-size: 4vw;
+        text-align: left;
+        background-color: #ffffd3;
+        position: absolute;
+        width: 45%;
+      }
+      #slideLeft {
+        left: -100%;
+        transition: left 0.7s;
+        text-align: right;
+      }
+      #slideRight {
+        right: -100%;
+        transition: right 0.7s;
+      }
+      img {
+        display: block;
+        min-width: 100px;
+        width: auto;
+        max-width: 50%;
+        transition: opacity 0.7s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mobile-wrapper {
+    .images {
+      #slideRight,
+      #slideLeft {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

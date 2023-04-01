@@ -1,0 +1,87 @@
+<div class="wrapper">
+  <div
+    (mouseover)="over($event)"
+    (mouseout)="out($event)"
+    class="contestant-image1"
+    id="left"
+  >
+    <div id="contestant-info1">
+      <h3>Competing for Sweden:</h3>
+      <p>TINA</p>
+      <h3>Potato credentials:</h3>
+      <p>Enjoys them</p>
+      <h3>Snack credentials:</h3>
+      <p>Extensive</p>
+    </div>
+    <img src="../../assets/tina.PNG" alt="" />
+  </div>
+  <div class="info">
+    <div class="vs">
+      <p>Sweden</p>
+      <p>vs</p>
+      <p>Ireland</p>
+    </div>
+    <p>5 Flavours</p>
+    <p>2 Nations</p>
+    <p>1 Winner</p>
+  </div>
+  <div
+    (mouseover)="over($event)"
+    (mouseout)="out($event)"
+    class="contestant-image2"
+    id="right"
+  >
+    <img src="../../assets/eva.PNG" alt="" />
+    <div id="contestant-info2">
+      <h3>Competing for Ireland:</h3>
+      <p>EVA</p>
+      <h3>Potato credentials:</h3>
+      <p>is Irish</p>
+      <h3>Snack proficiency:</h3>
+      <p>Fluent</p>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-wrapper">
+  <div class="mobile-vs">
+    <p>Sweden</p>
+    <p>vs</p>
+    <p>Ireland</p>
+  </div>
+  <p>5 Flavours</p>
+  <p>2 Nations</p>
+  <p>1 Winner</p>
+
+  <div class="images">
+    <div id="slideLeft">
+      <h3>Competing for Ireland:</h3>
+      <p>EVA</p>
+      <h3>Potato credentials:</h3>
+      <p>is Irish</p>
+      <h3>Snack proficiency:</h3>
+      <p>Fluent</p>
+    </div>
+    <div id="slideRight">
+      <h3>Competing for Sweden:</h3>
+      <p>TINA</p>
+      <h3>Potato credentials:</h3>
+      <p>Enjoys them</p>
+      <h3>Snack credentials:</h3>
+      <p>Extensive</p>
+    </div>
+
+    <img
+      id="leftImage"
+      (click)="mobileShow($event)"
+      src="../../assets/tina.PNG"
+      alt=""
+    />
+    <img
+      id="rightImage"
+      (click)="mobileShow($event)"
+      src="../../assets/eva.PNG"
+      alt=""
+    />
+  </div>
+</div>
